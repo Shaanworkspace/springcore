@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--This is our bean of Student.java Class-->
+    <bean class="com.springcore.Students" name="student1">
+        <property name="studentId">
+            <value>123</value>
+        </property>
+
+        <property name="studentName" value="Shaan"/> <!--we are using value tag as attribute .method of declaration on one line -->
+        <property name="studentAddress" value ="BhaguPur"/>
+    </bean>
+
+    <!--Another obj(student2) of Students class using P Schema        -->
+    <bean class="com.springcore.Students" name="student2" p:studentId="1234" p:studentAddress="UpdatedBhagu" p:studentName="ShaanYadav"/>
+
+
+</beans>
