@@ -29,6 +29,12 @@
                 <entry key="C++" value="3month"/>
             </map>
         </property>
+        <property name="props">
+            <props>
+                <prop key="username">ShaanYadav</prop>
+                <prop key="password">123321</prop>
+            </props>
+        </property>
     </bean>
 
 
