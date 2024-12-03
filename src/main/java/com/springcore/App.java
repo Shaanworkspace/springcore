@@ -8,6 +8,7 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
+        @SuppressWarnings("resource")
         ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
         Students student1 = (Students) context.getBean( "student1");
         //this is printed by toString Method in Student class

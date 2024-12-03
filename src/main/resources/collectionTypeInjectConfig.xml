@@ -6,7 +6,7 @@
        https://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean class="com.spring.employ" name="employ1">
+    <bean class="com.collectionTypeInject.employ" name="employ1">
         <property name="employName" value="Shaan"/>
         <property name="contact">
             <list>

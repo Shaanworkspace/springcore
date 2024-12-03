@@ -5,11 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-       <bean class="com.constructorInjection.Person" name="person">
-              <constructor-arg value="12" type="int"/>
-              <constructor-arg value="Shaan"/>
-       </bean>
-
-
-
+    <bean class ="com.Lifecycle.Samosa" name="samosa">
+        <!-- The value we want in the bean is known as to give property(use getter and setter) if wanna use constructor then we use constructor-arg -->
+        <property name="price" value="12"/>
+    </bean>
 </beans>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--Creating config of reference type classes Here least class is B having no dependency so start with B-->
+    <bean class="com.referenceTypeInject.B" name ="BRef" p:y="90"/>
+    <bean class="com.referenceTypeInject.A" name="ARef" p:x="40" p:objectB-ref="BRef"/>
+    <!--We can write it as -->
+        <!--<bean class="com.referenceTypeInject.A" name="ARef" p:x="40">-->
+        <!--    <property name="objectB">-->
+        <!--         <ref bean="BRef"/>-->
+        <!--     </property>-->
+        <!-- </bean>-->
+</beans>
